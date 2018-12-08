@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/streamich/entask/compare/v1.0.0...v1.1.0) (2018-12-08)
+
+
+### Features
+
+* 🎸 add TypeScript typings ([e4075a1](https://github.com/streamich/entask/commit/e4075a1))
+
 # 1.0.0 (2018-12-08)
 
 
