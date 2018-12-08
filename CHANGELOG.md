@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/streamich/entask/compare/v1.2.2...v1.2.3) (2018-12-08)
+
+
+### Bug Fixes
+
+* check that setTimeout exists ([f353890](https://github.com/streamich/entask/commit/f353890))
+
 ## [1.2.2](https://github.com/streamich/entask/compare/v1.2.1...v1.2.2) (2018-12-08)
 
 
