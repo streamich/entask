@@ -37,7 +37,7 @@ microtask(() => console.log('Hello'));
 
 ### `microtask`
 
-Will schedue a *micro-task*, it will try to use the following methods in this order:
+Will schedule a *micro-task*, it will try to use the following methods in this order:
 
 1. `process.nextTick`
 2. `Promise`
@@ -57,7 +57,7 @@ Will schedue a *macro-task*, it will try to use the following methods in this or
 4. `setTimeout`
 
 If you are running in Node.js or browser environemnt, then `macrotask` will at least
-defualt to `setTimeout`. If you are running in an evironment, that does not even
+default to `setTimeout`. If you are running in an evironment, that does not even
 have `setTimeout` method, `macrotask` may equal to `null`.
 
 
