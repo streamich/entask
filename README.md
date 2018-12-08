@@ -73,6 +73,19 @@ i.e. `asap` will try to schedule a *micro-task* but fall back to scheduling a
 *macro-task*.
 
 
+## Lite
+
+You can also use light version.
+
+```js
+import {microtask, macrotask, asap} from 'entask/lite';
+```
+
+It has the same API but does not include `MutationObserver`, because almost all
+modern browsers will have `Promise` implementation. It also does not include
+`window.postMessage`, because almost all modern browsers have `MessageChannel`
+implementation available.
+
 ## License
 
 [Unlicense](LICENSE) &mdash; public domain.

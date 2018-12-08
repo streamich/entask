@@ -15,7 +15,9 @@
   "main": "lib/index.js",
   "files": [
     "index.js",
-    "index.d.ts"
+    "index.d.ts",
+    "lite.js",
+    "lite.d.ts"
   ],
   "scripts": {
     "prettier": "prettier --ignore-path .gitignore --write 'src/**/*.{ts,tsx,js,jsx}'",
@@ -25,7 +27,7 @@
     "commitmsg": "commitlint -E GIT_PARAMS",
     "clean": "rimraf lib",
     "build": "echo 'already built'",
-    "eslint": "eslint index.js",
+    "eslint": "eslint '{index,lite}.js'",
     "test": "jest --no-cache --config='jest.config.js'",
     "release": "semantic-release"
   },
