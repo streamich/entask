@@ -31,6 +31,17 @@ microtask(() => console.log('Hello'));
 // 👉 Hello world!
 ```
 
+or
+
+```js
+macrotask(() => console.log('C'));
+microtask(() => console.log('B'));
+console.log('A');
+// 👉 A
+// 👉 B
+// 👉 C
+```
+
 
 ## Reference
 
