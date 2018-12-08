@@ -1,6 +1,6 @@
 'use strict';
 
-var microtaskProcessNextTick = typeof process === 'object'
+var microtaskProcessNextTick = ((typeof process === 'object') && !process.browser)
   ? process.nextTick || null
   : null;
 
