@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/streamich/entask/compare/v1.2.1...v1.2.2) (2018-12-08)
+
+
+### Bug Fixes
+
+* re-order postMessage with MessageChannel ([2ae3609](https://github.com/streamich/entask/commit/2ae3609))
+
 ## [1.2.1](https://github.com/streamich/entask/compare/v1.2.0...v1.2.1) (2018-12-08)
 
 
