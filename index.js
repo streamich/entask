@@ -43,7 +43,9 @@ var macrotaskWindowPostMessage = (typeof window === 'object' && window.postMessa
   }
   : null;
 
-var macrotaskSetTimeout = function (fn) { setTimeout(fn, 0); };
+var macrotaskSetTimeout = typeof setTimeout === 'function'
+  ? function (fn) { setTimeout(fn, 0); }
+  : null;
 
 var microtask = microtaskProcessNextTick || microtaskPromise || microtaskMutationObserver;
 var macrotask = macrotaskSetImmediate || macrotaskWindowPostMessage || macrotaskMessageChannel || macrotaskSetTimeout;
