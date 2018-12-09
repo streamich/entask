@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/streamich/entask/compare/v1.3.0...v1.4.0) (2018-12-09)
+
+
+### Features
+
+* 🎸 add browser version ([6e172fb](https://github.com/streamich/entask/commit/6e172fb))
+
 # [1.3.0](https://github.com/streamich/entask/compare/v1.2.3...v1.3.0) (2018-12-09)
 
 
