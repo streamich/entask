@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/streamich/entask/compare/v1.2.3...v1.3.0) (2018-12-09)
+
+
+### Features
+
+* make light version lighter ([d07cd82](https://github.com/streamich/entask/commit/d07cd82))
+
 ## [1.2.3](https://github.com/streamich/entask/compare/v1.2.2...v1.2.3) (2018-12-08)
 
 
