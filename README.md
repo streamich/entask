@@ -97,6 +97,24 @@ modern browsers will have `Promise` implementation. It also does not include
 `window.postMessage`, because almost all modern browsers have `MessageChannel`
 implementation available.
 
+
+## Shims
+
+You can shim `process.nextTick` in your browser.
+
+```js
+require('entask/shim/nexttick').install();
+process.nextTick(() => { /* ... */ });
+```
+
+You can also shim `setImmediate`.
+
+```js
+require('entask/shim/setimmediate').install();
+setImmediate(() => { /* ... */ });
+```
+
+
 ## License
 
 [Unlicense](LICENSE) &mdash; public domain.
