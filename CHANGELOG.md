@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/streamich/entask/compare/v1.5.0...v1.6.0) (2018-12-09)
+
+
+### Features
+
+* 🎸 add shims ([10ed0e9](https://github.com/streamich/entask/commit/10ed0e9))
+
 # [1.5.0](https://github.com/streamich/entask/compare/v1.4.0...v1.5.0) (2018-12-09)
 
 
