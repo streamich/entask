@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/streamich/entask/compare/v1.4.0...v1.5.0) (2018-12-09)
+
+
+### Features
+
+* add MessageCahnnel impl to browser in case run in WebWorker ([7865e0f](https://github.com/streamich/entask/commit/7865e0f))
+
 # [1.4.0](https://github.com/streamich/entask/compare/v1.3.0...v1.4.0) (2018-12-09)
 
 
