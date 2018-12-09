@@ -6,7 +6,7 @@ var microtaskProcessNextTick = ((typeof process === 'object') && !process.browse
 
 // eslint-disable-next-line no-undef
 var promise = typeof Promise === 'function' ? Promise.resolve() : null;
-var microtaskPromise = promise ? function (fn) { promise.then(function () { fn(); }); } : null;
+var microtaskPromise = promise ? function (fn) { promise.then(fn); } : null;
 
 var macrotaskSetImmediate = typeof setImmediate === 'function'
   ? setImmediate : null;
@@ -14,7 +14,7 @@ var macrotaskSetImmediate = typeof setImmediate === 'function'
 var macrotaskMessageChannel = typeof MessageChannel === 'function'
   ? function (fn) {
     var channel = new MessageChannel();
-    channel.port1.onmessage = function () { fn(); };
+    channel.port1.onmessage = fn;
     channel.port2.postMessage(0);
   }
   : null;
