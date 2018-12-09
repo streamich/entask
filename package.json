@@ -12,12 +12,15 @@
   "engines": {
     "node": ">=6.9"
   },
-  "main": "lib/index.js",
+  "main": "index.js",
+  "browser": "browser.js",
   "files": [
     "index.js",
     "index.d.ts",
     "lite.js",
-    "lite.d.ts"
+    "lite.d.ts",
+    "browser.js",
+    "browser.d.ts"
   ],
   "scripts": {
     "prettier": "prettier --ignore-path .gitignore --write 'src/**/*.{ts,tsx,js,jsx}'",
