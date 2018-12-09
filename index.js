@@ -21,8 +21,11 @@ var microtaskMutationObserver = Observer
     }
   : null;
 
-var macrotaskSetImmediate = typeof setImmediate === 'function'
-  ? setImmediate : null;
+var macrotaskSetImmediate = null;
+if (typeof setImmediate === 'function') {
+  var $setImmediate = setImmediate;
+  macrotaskSetImmediate = function(fn) { $setImmediate(fn); };
+}
 
 var macrotaskMessageChannel = typeof MessageChannel === 'function'
   ? function (fn) {
