@@ -15,12 +15,20 @@ var macrotaskWindowPostMessage = (typeof window === 'object' && window.postMessa
   }
   : null;
 
+var macrotaskMessageChannel = typeof MessageChannel === 'function'
+  ? function (fn) {
+    var channel = new MessageChannel();
+    channel.port1.onmessage = function () { fn(); };
+    channel.port2.postMessage(0);
+  }
+  : null;
+
 var macrotaskSetTimeout = typeof setTimeout === 'function'
   ? function (fn) { setTimeout(fn, 0); }
   : null;
 
 var microtask = microtaskPromise;
-var macrotask = macrotaskWindowPostMessage || macrotaskSetTimeout;
+var macrotask = macrotaskWindowPostMessage || macrotaskMessageChannel || macrotaskSetTimeout;
 
 exports.microtask = microtask;
 exports.macrotask = macrotask;
