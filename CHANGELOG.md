@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/streamich/entask/compare/v1.6.0...v1.6.1) (2018-12-09)
+
+
+### Bug Fixes
+
+* 🐛 keep ref to original setImmediate and wrap it in func ([e73e8bb](https://github.com/streamich/entask/commit/e73e8bb))
+
 # [1.6.0](https://github.com/streamich/entask/compare/v1.5.0...v1.6.0) (2018-12-09)
 
 
