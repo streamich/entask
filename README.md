@@ -1,6 +1,6 @@
 # entask
 
-Enqueue *micro-tasks* and *macro-tasks* in browser and Node.js. Only [__0.3Kb__](https://bundlephobia.com/result?p=entask@1.4.0) in size.
+Enqueue *micro-tasks* and *macro-tasks* in browser and Node.js. Only [__0.3Kb__](https://bundlephobia.com/result?p=entask@1.4.0) in weight and __60 lines__ of code in length.
 
 
 ## What are micro- vs macro-tasks?
